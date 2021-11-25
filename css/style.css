@@ -1,0 +1,391 @@
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    color: #001e3e;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    min-width: 350px;
+}
+
+main {
+    position: relative;
+    top: 200px; /* To offset for fixed header. */
+  }
+
+a {
+    color: #001e3e;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+a:hover{
+    color:rgb(255, 60, 86);
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #001e3e;
+    color: white;
+  }
+
+  .quote {
+      font-style: italic;
+      text-align: justify;
+      font-family: "Dancing Script";
+  }
+
+  .quote-author {
+      text-align: right;
+      font-size: 0.8rem;
+  }
+
+  .transbox {
+      background-color:white;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+  }
+
+  .transbox p{
+    /* font-weight: bold; */
+    padding: 0 10px;
+}
+
+/******************************************************************/
+/* Header Section */
+/******************************************************************/
+
+header {
+    border-bottom: 1px solid darkblue;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-left {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#nav-left img {
+    height: 90px;
+    margin-left: 10px;
+}
+
+#nav-left a{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#nav-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+header .mobile {
+    display: none;
+    align-items: center;
+}
+
+/*dimensionning the icons for mbile view*/
+header .mobile a img{
+    height: 50px;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Smartphones */
+@media only screen and (max-width: 800px) {
+    header #nav-right {
+      display: none;
+    }
+  
+    header .mobile {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+}
+
+
+/******************************************************************/
+/* Main section */
+/******************************************************************/
+main {
+    position: relative;
+    top: 101px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/******************************************************************/
+/* Order section */
+/******************************************************************/
+#order-section{
+    margin: 0 auto;
+
+    color: white;
+
+    height: 600px;
+    max-width: 1200px;
+    
+    background-image: url("../img/banner.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#order-section-box {
+    padding: 0 30px 30px 30px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgb(255, 60, 86);
+  }
+
+
+#order-section-box .button {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
+
+/******************************************************************/
+/* Mission section */
+/******************************************************************/
+#mission-section {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+#mission-section .quote-bloc{
+    margin: 0 50px;
+}
+
+.left {
+    text-align: left;
+    margin-left: 50px;
+    /* width: 80%; */
+}
+
+.left p {
+    margin-right: 50px;
+}
+
+.right {
+    text-align: right;
+    margin-right: 50px;
+    /* width: 80%; */
+}
+
+.right p {
+    margin-left: 50px;
+}
+
+#mission-section p {
+    text-align: justify;
+}
+/******************************************************************/
+/* Prestations section */
+/******************************************************************/
+#prestations-section {   
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#prestations-section-intro {
+    margin-top: 50px;
+}
+
+#prestations-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.prestation-sample {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 0 20px 20px 20px;
+}
+
+.prestation-desc{
+    height: 350px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestation-desc .transbox{
+    visibility: hidden;
+}
+
+.prestation-desc:hover > .transbox{
+    visibility: visible;
+}
+
+
+#classique{
+    background-image: url("../img/lit.jpg");
+}
+
+#premium{
+    background-image: url("../img/champagne.jpg");
+}
+
+#express{
+    background-image: url("../img/toilettes.jpg");
+}
+
+#green{
+    background-image: url("../img/green.jpg");
+}
+
+#double{
+    background-image: url("../img/double.jpg");
+}
+
+/******************************************************************/
+/* Chibreurs section */
+/******************************************************************/
+#chibreurs-section {   
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#chibreurs-section-intro {
+    margin-top: 50px;
+}
+
+#chibreurs-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.chibreur-sample {
+    background-color: white;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+}
+
+.chibreur-quote{
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chibreur-quote .transbox{
+    visibility: hidden;
+}
+
+.chibreur-quote:hover > .transbox{
+    visibility: visible;
+}
+
+
+
+#Jeff {
+    background-image: url('../img/Jeff.jpg');
+    background-position: top;
+}
+
+#Pop {
+    background-image: url('../img/pop.jpg');
+}
+
+#Francis {
+    background-image: url('../img/Francis.jpg');
+}
+
+#Totof {
+    background-image: url('../img/Totof.jpg');
+}
+
+#Sam {
+    background-image: url('../img/Samuel.jpg');
+}
+
+#Raph {
+    background-image: url('../img/Raph.jpg');
+}
+
+#Loik {
+    background-image: url('../img/Loik.jpg');
+}
+
+/******************************************************************/
+/* Quotes section */
+/******************************************************************/
+#quotes-section {   
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
+}
+.quotes-samples {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .quote-sample{
+    width: 600px;
+    margin: 0 50px;
+}
+/******************************************************************/
+/* Footer section */
+/******************************************************************/
+footer {
+    padding: 30px;
+    font-size: 0.6rem;
+    position: relative;
+    top: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
