@@ -120,7 +120,7 @@ header h1{
 }
 
 /* Smartphones */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 490px) {
     header #nav-right {
       display: none;
     }
