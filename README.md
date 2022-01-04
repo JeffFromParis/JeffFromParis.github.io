@@ -1,16 +1,19 @@
-#Company Home Page
-*A Project by Jeff Vergne*
+# Portfolio Project
 
-This project is part of the **Fullstack Engineer Career** path from CodeCademy
+This is the source code for my portfolio website. I built this to showcase what I've been working on.   
+In addition, you will find the different elements of my resume:
+* Work Experience
+* Education
+* Spoken languages
 
-## Objective
-The objective here is to create a fake company homepage using flexbox.
+This project is part of the **Full Stack Engineer** path from Codecademy.
 
-### Subject
-I decided to create a page for a company called **"Chibreur Privé"**, a parody of **Chauffeur Privé**, which was a Uber-like French company.
-Chibre in French means Dick. The idea was to create a prostitution website were women could order a male for sex.
+## Built with
 
-The pictures are pics from my friends, and this is only intended for personnal sharing.
+* HTML
+* CSS
+* Javascript
 
-## Technology
-Written in HTML5 / CSS3
+## Demo
+
+You can visit the website by going [here](https://jefffromparis.github.io/).

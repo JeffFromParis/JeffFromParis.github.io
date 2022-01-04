@@ -1,0 +1,227 @@
+html{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 830px;
+    margin: 0 auto;
+    padding: 0;
+    
+    color: #78a1bb;
+    background-color: #eff9f2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the navigation bar on the top of the page*/
+nav {
+    /* border: 1px solid red; */
+    background-color: #78a1bb;
+    color: #eff9f2;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+nav h2{
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #eff9f2;
+}
+
+.navigation-items {
+    display: flex; /*this flex display allows the list items to be horizontal*/
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navigation-item {
+    margin: 8px;
+}
+
+/*****************************************************
+*
+* Styles for the main section on the top of the page
+*
+******************************************************/
+
+.banner {
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 40px 0;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+#banner-index {
+    background-image: url("../img/montmartre-1-transparent.jpg");
+}
+
+#banner-contact{
+    background-image: url("../img/montmartre-2-transparent.jpg");
+}
+
+#banner-resume{
+    background-image: url("../img/montmartre-3-transparent.jpg");
+}
+
+.banner h1{
+    font-size: 4rem;
+    color: #78a1bb;
+}
+
+/* About me section */
+#about-me {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 30px;
+
+    display: flex;
+}
+
+#about-me-text-container{
+    /* border: 1px solid green; */
+    width: 60%;
+    padding: 16px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#about-me-img-container{
+    /* border: 1px solid blue; */
+
+    width: 40%;
+    /* margin: 0 20px; */
+    /* flex-shrink: 0; */
+}
+
+#about-me-img-container img{
+    object-fit: cover;
+    width: 100%;
+    /* height: 250px; */
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*Styles applied to the Projects section*/
+
+#projects{
+    margin: 30px 0;
+    padding: 16px;
+}
+
+#skills{
+    margin: 30px 0;
+    padding: 16px;
+}
+
+#languages{
+    margin: 30px 0;
+    padding: 16px;
+}
+
+#contact-me{
+    margin: 30px 0;
+    padding: 16px;
+}
+
+#experiences ul li {
+    margin-bottom: 0.8rem;
+}
+
+#experiences ul li a {
+    text-decoration: none;
+    color:#78a1bb;
+}
+
+#education ul li a {
+    text-decoration: none;
+    color:#78a1bb;
+}
+
+summary{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#education ul li {
+    margin-bottom: 0.8rem;
+}
+/************************************************
+Items are used on several pages
+they are the common way to display different elements (projects, languages etc..) using flex-wrap
+************************************************/
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    color: #eff9f2;
+    background-color: #78a1bb;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.item-img {
+    height: 150px;
+    width: 300px;
+}
+
+.item-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-name h4 a{
+    color: #eff9f2;
+    text-decoration :none;
+}
+
+.item-desc p{
+    margin-top: 5px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.checked {
+    color: #eff9f2;
+}
+
+.unchecked {
+    color: rgb(66, 66, 66);
+}
+
+.double-size{
+    font-size: 2rem;
+}
+
+/* Styles for the footer at the bottom of the pages*/
+footer {
+    background-color: #78a1bb;
+    color: #eff9f2;
+    text-align: right;
+    padding: 16px;
+}
